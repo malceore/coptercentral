@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+<script type="text/javascript" src="bin/data_and_time.js"></script>
+<title>Swim a Mile for Hospice</title>
+</head>
+<body class="" style="background:#992E41;">
+
+<!--
+This is the navigation bar at the top, holds the majority of the links on the website and helps teh user navigate.
+-->
+
+<style>
+col{
+	text-align: left;
+
+}
+
+</style>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+	<!-- List of links stored from left to right. Save for Search and Facebook links-->
+	<div id="topbar" class="">
+    	<ul class="nav navbar-nav collapse in" style="width:100%">
+            <li> 
+            	<a class="navbar-brand" href="index.html">
+		        	<img src="res/new_logo_vector.gif" style="width:auto; height:45px; margin-top:-12px;padding:0px;bottom:25px" />
+      			</a>
+            </li>
+      		<li><a href="Fundraising.html">Fundraising</a></li>
+            <li> <a href="reg_swimmers.html">Registration</a></li>
+      		<li><a href="Sponsors.html">Sponsors</a></li>
+      		<li><a href="Contact.html">Contact Us</a></li>            
+            <li style="margin-left:auto; margin-right:auto; width:auto; min-width:55px"></li>
+            <li class="pull-right">
+            	<a href="Search.html">
+                	Search <span class="glyphicon glyphicon-search"></span> 
+            	</a>
+            </li>
+
+      		<!--<li style="position:absolute;right:3%">-->
+            <li class="pull-right">
+      			<a href="https://www.facebook.com/Swim-a-Mile-for-Hospice-1588147064779992/">
+        			Facebook
+        		</a>
+      		</li>
+    	</ul>
+        
+        <div id="new" class="collapse">
+			<div class="dropdown">
+  				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">\/</button>
+  				<ul class="dropdown-menu">
+	                <li> 
+    	    	    	<a class="navbar-brand" href="http://seriousillness.net/stlawrence/">
+				        	<img src="res/new_logo_vector.gif" style="width:auto; height:45px; margin-top:-12px;padding:0px;bottom:25px" />
+      					</a>
+        		    </li>
+      				<li><a href="Registration.html">Registration</a></li>
+      				<li><a href="Fundraising.html">Fundraising</a></li>
+      				<li><a href="Sponsors.html">Sponsors</a></li>
+      				<li><a href="Contact.html">Contact Us</a></li>
+            		<li style="margin-left:auto; margin-right:auto; width:auto; min-width:55px"></li>
+            		<li class="">
+            			<a href="search.html">
+                			Search <span class="glyphicon glyphicon-search"></span> 
+   		         		</a>
+            		</li>
+		      		<!--<li style="position:absolute;right:3%">-->
+    		        <li class="">
+      					<a href="https://www.facebook.com/Swim-a-Mile-for-Hospice-1588147064779992/">
+        					Facebook
+        				</a>
+      				</li>             
+  				</ul>
+			</div>
+        </div>       
+     </div>        
+  </div>
+</nav>
+
+<!-- 
+This is the 'Banner' for a lack of a better word. Jumbotron is Bootstraps big picture with a title printed on it.
+-->
+<div class="jumbotron" style="margin-top:0px; padding:0px">
+
+  <div class="container-fluid" style="height:100%; background: rgba(0, 0, 0, 0.5); background-size:cover; margin:0px; padding:0px">
+	<div class="container-fluid" style="width:60%;float:left;">
+  		<h1 style="color:#FFF; padding:1em;">Swim a Mile for Hospice 
+		<!-- Date below, place inside <small> </small> quotes. -->
+        <small><br /><div id="date"></div><small></h1>
+  	</div>
+    <div class="container-fluid" style="width:40%; float:left; padding:1em; color:#CCC; margin-top:3em;">
+    	<h2>What is Swim a Mile? <br></h2> <h4 style="text-align: justify; text-justify: inter-word;">The first Saturday of August Hospice hosts the Swim a Mile event at Postwood Park Beach in Hannawa Falls, NY. This event is a non-competitive, open swim to raise money for Hospice and Palliative Care of St. Lawrence Valley. Speed is not the important thing. What is important is sharing a unique athletic experience on Hannawa Pond and raising money in the process.</h4>
+		<p>
+        <a class="btn btn-primary btn-sm" href="Fundraising.html" role="button">Donate</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Start of body, or basircally the big information area below the jumbotron til the end of the page. -->    
+<div class="container customMain1">
+
+	<!-- New carousel with just Javascript yey! See external javascript file bin/data_and_time.js to edit contents.  -->
+	<div class="bumper customSecondary1" style="min-height:120px">
+    	<div onclick="carousel.prev();" class="col-sm-2 btn glyphicon glyphicon-circle-arrow-left" style="font-size:2em;"></div>
+        <h4>
+    		<div id="carousel" class="col-sm-8">
+				<!-- This text is altered by Javascript in bin/data_and_time.js -->
+        		<h2>Default text</h2>
+    		</div>
+        </h4>
+        <div onclick="carousel.next();" class="col-sm-2 btn glyphicon glyphicon-circle-arrow-right" style="font-size:2em;"></div>
+    </div>
+    
+    <!-- Brief description and map of the event. -->
+    <div class="bumper customSecondary1" style="min-height:60px;">
+    	<div class="row">
+        	<div class="col-md-12" style="">
+        		<h3 class="pull-left"> General Details and Directions</h3> 
+                <button class="btn btn-primary btm-sm dropdown-toggle pull-right" data-toggle="collapse" data-target="#colla0">\/</button>
+            </div>
+            <div id="colla0" class="collapse in customSecondary1" style="min-height:420;">
+            
+            	<!-- Event Description goes in below div -->
+            	<div class="col-sm-6" style="">
+		    <h4>
+            	    Beloved community event hosted by Hospice and Potsdam Recreation at scenic Postwood park. Participants have the option of swimming a full mile course or getting their feet wet in the half mile course. Swimmer safty is our top concern with dozens of boats and kayaks aswell as five certified lifeguards spread out along the course. Participants are rewarded with a Swim a Mile merchandise consisting of a t-shirt, backpack and swim cap. Additional Prizes are rewarded based on fundraising efforts. Not a Swimmer? There are other ways to get involved listed below or join us in supporting swimmers.
+		    </h4>
+            	</div>
+
+				<!-- Google maps to location is setup below. -->	
+    	    	<div class="col-md-5" style="margin-right:10px">
+        			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.274604517365!2d-74.96871383362291!3d44.59928496573222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc8a095c4fef21%3A0xcfc4afc444c0c2c4!2sPostwood+Park%2C+Potsdam%2C+NY+13676!5e0!3m2!1sen!2sus!4v1458772694100" width="450" height="320" frameborder="0" style="border:0" allowfullscreen>
+            		</iframe>
+                </div> 
+        	</div>
+        </div>
+    </div>
+    
+    
+	<!-- Three sections along the bottom that can be extended for more information. -->
+    <div class="bumper customSecondary1" style="min-height:60px;padding:1em;">
+		<div class="row">
+        	<div class="col-sm-12">
+	    		<h3 class="pull-left">I want to register as a Swimmer!</h3>
+    			<button class="btn btn-primary btm-sm dropdown-toggle pull-right" data-toggle="collapse" data-target="#colla1">\/</button>
+            </div>
+			<div id="colla1" class="collapse in customSecondary1" style="min-height:420">
+
+  				<!-- Img column  -->        
+            	<img class="col-sm-5" alt="swimming fun" src="res/swimmer_11.gif" style="width:300px"></img>
+                
+                <!-- Text for swimmers goes in below box. -->
+                <div class="col-sm-6" style="">
+		    <h4>
+			Full course is avaliable for swimmers age 14 and up, the half mile swim is avaliable for those 12 to 112 years old! Swimmers are grouped according to ability level with everyone completes the swim at her or his own pace. Some swimmers take 20 minutes; others take more than an hour, stopping to chat and dog-paddle as they move around the lake. Preregistration guarentees you a t-shirt; so register now and be part of this great event to support Hospice!
+		    </h4>
+                	<a href="reg_swimmers.html" class="btn btn-primary"> Register as Swimmer </a>
+                    <a href="reg_boaters.html" class="btn btn-primary"> Register as Boater </a>
+                </div>                
+             </div>       
+		</div>
+    </div>
+
+
+	<div class="bumper customSecondary1" style="min-height:60px; padding:1em;">
+    	<div class="row">
+        	<div class="col-sm-12">
+		    	<h3 class="pull-left">I want to volunteer and help out!</h3>
+		        <button class="btn btn-primary btm-sm dropdown-toggle pull-right" data-toggle="collapse" data-target="#colla2">\/</button>
+            </div>
+			<div id="colla2" class="collapse in">         
+            	             
+                <!-- Text describing boaters and volunteering goes in below div. -->
+                <div class="col-sm-6" style="min-height:250px">
+		    <h4>
+                    A limited number water side volunteers are needed to help with the general organization of the event. Duties include:
+		    <ul>
+			<li>Swimmer Check-ins</li>
+			<li>Organizing Swim Pods</li>
+			<li>Safty monitoring</li>
+			<li>Supporting Swimmers</li>
+		    </ul>
+		    Contact Hospice for more information.
+		    </h4>
+                    <a href="reg_volunteers.html" class="btn btn-primary"> Register as Volunteer </a>
+                    <a href="reg_boaters.html" class="btn btn-primary"> Register as Boater </a>            	
+                </div>
+                <img class="col-sm-3" alt="swimming fun" src="res/swimmer_23.gif" style="width:380px; margin-right:10px;"></img> 
+			</div>
+         </div>
+    </div>
+    
+    <!-- Sponsors section -->
+    <div class="bumper customSecondary1" style="min-height:60px; padding:1em; vertical-text-align:center;">
+    	<div class="row">
+        	<div class="col-sm-12">
+		    	<h3 class="pull-left">I want to sponsor a swimmer!</h3>
+		    	<button class="btn btn-primary btm-sm dropdown-toggle pull-right" data-toggle="collapse" data-target="#colla3">\/</button>
+            </div>
+			<div id="colla3" class="collapse in">    
+                <img class="col-sm-5 " alt="swimming fun" src="res/swimmer_2.gif" style="width:380px;"></img>
+                <!-- Information for sponsors goes in below div. -->
+        	    <div class="col-sm-5" style="min-height:300px">
+			<h4>
+            		<p> Donors can select a specific swimmer to sponsor using our search feature or make a general donation to the event. You donations will directly impact the lives of friends and neighbors when they need it most.</p>
+			<p> Corporate Sponsorships are avaliable, contact Hospice for more information! Checkout our current event <a href="Sponsors.html"> sponsors </a>.</p>
+			</h4>
+                    <a href="Fundraising.html" class="btn btn-primary"> Donate </a>
+                    <a href="Sponsors.html" class="btn btn-primary"> Corporate Sponsors</a>
+            	</div>
+			</div>
+        </div>
+    </div>
+    
+    <div style="min-height:80px;">
+    </div>
+</div>
+
+<!-- Information footer with links, date updated, legal and technology used -->
+<div class="container customMain1" style="background:#222;min-height:50px;color:#CCC; padding:1em; text-align:center;">
+	<div style="margin-left:30%; margin-right:30%">
+		<div style=" width:75px;float:left;"><a href="http://www.advocatehealth.com/hospicepatientsrights">  Patient Info  </a></div>
+   	 	<div style="width:75px;float:left;"><a href="Contact.html"> Contact </a></div>
+    	<div style="width:75px; float:left;"><a href="https://malceore.github.io/">  Brandon T. Wood   </a></div>
+    	<div style="width:75px; float:left;"><a href=""> Legal </a></div>
+    </div>
+</div>
+
+</body>
+</html>

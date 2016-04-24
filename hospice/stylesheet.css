@@ -1,0 +1,110 @@
+.customMain1{
+	
+	color:#91002C;
+	background-color: #DDD7DE;
+	border-radius:5px;
+}
+
+.customSecondary1{
+	
+	background-color: #F3FFF4;
+}
+
+.customMain2{
+	
+	color:#381C26;
+	background-color: #798787;
+}
+
+.customSecondary2{
+	
+	background-color: #E5FAFF;
+}
+
+.customMain3{
+	
+	color:#1999B2;
+	background-color: #DFE9F7;
+}
+
+.customSecondary3{
+	
+	background-color: #FFFBF3;
+}
+   
+img {
+	
+	margin:1em;
+}
+   
+.bumper{
+	
+	text-align: center;
+	border: 2px solid #999;
+	border-radius:10px; 
+	padding:30px;
+	margin-top:25px;
+}
+
+html {
+
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+}
+
+@media (max-width: 770px){
+   .navbar-nav.collapse {
+       display: none !important;
+   }
+   .collapse {
+	  display: block !important;
+   }
+}
+
+a { 
+	text-decoration: none;
+	color: grey; 
+}
+
+.jumbotron {
+	position: relative;
+    background: #000 url("res/collage_5.png") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+	color:#F3FFF4;
+}
+.col {
+	
+	padding: 2em;
+	height:10em;
+	border-radius:20px;
+}
+
+.page {
+	
+	background-color:#003333;
+	color:#FFF;
+}
+
+.circle{
+	-webkit-font-smoothing: antialiased;
+	transition:height 0.5s; /* Animation time */
+	transition:width 0.5s;
+    -webkit-transition:height 0.5s; /* For Safari */
+	-webkit-transition:width 0.5s;
+	display:block;
+	width:45px;
+	height:45px;
+	border-radius:50px;
+	font-size:20px;
+	color:#fff;
+	line-height:100px;
+	text-align:center;
+	text-decoration:none;
+	background:#3B5998;
+}
+
+
